@@ -1,23 +1,14 @@
-# kulswamini-maching-centre-jents-and-ladies-telaring-material-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kulswamini Machine Centre | Gents & Ladies Tailoring Material</title>
+  <title>कुलस्वामिनी मशीन सेंटर | टेलरिंग साहित्य</title>
 
-  <meta name="description"
-        content="Kulswamini Machine Centre - Gents & Ladies Tailoring Material, Threads, Buttons, Zips, Needles, Machine Accessories and more.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-
     *{
       margin:0;
       padding:0;
@@ -26,9 +17,9 @@
     }
 
     body{
-      font-family:'Poppins',sans-serif;
+      font-family:'Noto Sans Devanagari',sans-serif;
       background:#fffaf5;
-      color:#27221e;
+      color:#2d2118;
       line-height:1.6;
     }
 
@@ -37,121 +28,84 @@
       color:inherit;
     }
 
-    img{
-      width:100%;
-      display:block;
-    }
-
-    /* NAVBAR */
-
-    header{
+    .navbar{
       position:fixed;
       top:0;
-      left:0;
       width:100%;
       z-index:1000;
-      background:rgba(255,255,255,0.96);
-      box-shadow:0 3px 20px rgba(0,0,0,0.08);
+      background:rgba(255,255,255,.96);
+      box-shadow:0 2px 15px rgba(0,0,0,.08);
     }
 
-    nav{
+    .nav-container{
       max-width:1200px;
       margin:auto;
-      padding:15px 20px;
+      padding:14px 20px;
       display:flex;
-      align-items:center;
       justify-content:space-between;
+      align-items:center;
     }
 
     .logo{
-      font-family:'Playfair Display',serif;
-      font-size:25px;
-      font-weight:700;
-      color:#8b4a28;
+      font-size:22px;
+      font-weight:800;
+      color:#8b3a16;
     }
 
     .logo span{
       display:block;
-      font-family:'Poppins',sans-serif;
-      font-size:10px;
-      letter-spacing:2px;
+      font-size:12px;
       color:#777;
-      text-transform:uppercase;
+      font-weight:500;
     }
 
     .nav-links{
       display:flex;
-      gap:25px;
-      align-items:center;
+      gap:24px;
+      list-style:none;
     }
 
     .nav-links a{
       font-size:14px;
-      font-weight:500;
+      font-weight:600;
       transition:.3s;
     }
 
     .nav-links a:hover{
-      color:#b56535;
+      color:#c25b20;
     }
-
-    .nav-btn{
-      background:#8b4a28;
-      color:white !important;
-      padding:10px 18px;
-      border-radius:25px;
-    }
-
-    .menu{
-      display:none;
-      font-size:28px;
-      cursor:pointer;
-    }
-
-    /* HERO */
 
     .hero{
       min-height:100vh;
-      padding:130px 7% 70px;
+      padding:130px 20px 70px;
       display:flex;
       align-items:center;
       background:
-      linear-gradient(90deg,rgba(34,23,17,.9),rgba(34,23,17,.45)),
-      url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&q=80")
-      center/cover;
+        linear-gradient(rgba(55,25,10,.72),rgba(55,25,10,.72)),
+        url("https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;
+      background-position:center;
       color:white;
     }
 
     .hero-content{
-      max-width:700px;
-    }
-
-    .tag{
-      display:inline-block;
-      background:rgba(255,255,255,.15);
-      border:1px solid rgba(255,255,255,.35);
-      padding:8px 16px;
-      border-radius:30px;
-      font-size:13px;
-      margin-bottom:20px;
+      max-width:1150px;
+      margin:auto;
+      width:100%;
     }
 
     .hero h1{
-      font-family:'Playfair Display',serif;
-      font-size:clamp(42px,6vw,76px);
-      line-height:1.08;
+      font-size:52px;
+      max-width:750px;
+      line-height:1.25;
       margin-bottom:20px;
     }
 
-    .hero h1 span{
-      color:#f2b37f;
-    }
-
     .hero p{
-      max-width:620px;
-      color:#eee;
-      font-size:17px;
+      max-width:650px;
+      font-size:19px;
       margin-bottom:30px;
+      color:#f7eeee;
     }
 
     .buttons{
@@ -161,37 +115,35 @@
     }
 
     .btn{
-      display:inline-block;
-      padding:13px 23px;
+      padding:13px 24px;
       border-radius:30px;
-      font-weight:600;
+      font-weight:700;
+      display:inline-block;
       transition:.3s;
     }
 
     .btn-primary{
-      background:#b56535;
+      background:#e66b24;
       color:white;
     }
 
     .btn-primary:hover{
-      background:#914923;
+      background:#c95213;
       transform:translateY(-2px);
     }
 
     .btn-light{
-      border:1px solid white;
-      color:white;
-    }
-
-    .btn-light:hover{
       background:white;
-      color:#333;
+      color:#8b3a16;
     }
-
-    /* COMMON */
 
     section{
-      padding:85px 7%;
+      padding:80px 20px;
+    }
+
+    .container{
+      max-width:1150px;
+      margin:auto;
     }
 
     .section-title{
@@ -199,57 +151,35 @@
       margin-bottom:45px;
     }
 
-    .section-title small{
-      color:#b56535;
-      font-weight:700;
-      letter-spacing:2px;
-      text-transform:uppercase;
-    }
-
     .section-title h2{
-      font-family:'Playfair Display',serif;
-      font-size:42px;
-      margin-top:8px;
+      font-size:34px;
+      color:#7c3213;
+      margin-bottom:8px;
     }
 
     .section-title p{
       color:#777;
-      max-width:650px;
-      margin:10px auto;
     }
 
-    /* ABOUT */
-
     .about{
-      max-width:1200px;
-      margin:auto;
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:55px;
+      gap:45px;
       align-items:center;
     }
 
-    .about-img{
-      border-radius:25px;
-      overflow:hidden;
-      box-shadow:0 20px 50px rgba(0,0,0,.12);
-    }
-
-    .about-img img{
-      height:450px;
+    .about img{
+      width:100%;
+      height:400px;
       object-fit:cover;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
     }
 
-    .about-text small{
-      color:#b56535;
-      font-weight:700;
-      letter-spacing:2px;
-    }
-
-    .about-text h2{
-      font-family:'Playfair Display',serif;
-      font-size:42px;
-      margin:10px 0 18px;
+    .about-text h3{
+      font-size:28px;
+      margin-bottom:15px;
+      color:#8b3a16;
     }
 
     .about-text p{
@@ -257,322 +187,196 @@
       margin-bottom:15px;
     }
 
-    /* CATEGORIES */
+    .categories{
+      background:#f8eee5;
+    }
 
-    .category-grid{
-      max-width:1200px;
-      margin:auto;
+    .grid{
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:20px;
     }
 
-    .category{
+    .card{
       background:white;
-      padding:30px 20px;
+      border-radius:18px;
+      padding:25px 18px;
       text-align:center;
-      border-radius:20px;
-      box-shadow:0 8px 30px rgba(0,0,0,.07);
+      box-shadow:0 5px 20px rgba(0,0,0,.07);
       transition:.3s;
-      border:1px solid #f0e4db;
     }
 
-    .category:hover{
-      transform:translateY(-8px);
-      box-shadow:0 15px 35px rgba(0,0,0,.12);
+    .card:hover{
+      transform:translateY(-7px);
+      box-shadow:0 12px 28px rgba(0,0,0,.12);
     }
 
-    .category .icon{
+    .icon{
       width:70px;
       height:70px;
-      margin:0 auto 18px;
       border-radius:50%;
-      background:#f8e5d7;
+      background:#fff0e5;
       display:flex;
       align-items:center;
       justify-content:center;
+      margin:0 auto 15px;
       font-size:32px;
     }
 
-    .category h3{
+    .card h3{
       font-size:18px;
       margin-bottom:7px;
+      color:#6f2c12;
     }
 
-    .category p{
-      color:#777;
-      font-size:13px;
-    }
-
-    /* PRODUCTS */
-
-    .products{
-      background:#f7eee8;
-    }
-
-    .product-grid{
-      max-width:1200px;
-      margin:auto;
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:25px;
-    }
-
-    .product{
-      background:white;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 8px 25px rgba(0,0,0,.08);
-      transition:.3s;
-    }
-
-    .product:hover{
-      transform:translateY(-7px);
-    }
-
-    .product img{
-      height:220px;
-      object-fit:cover;
-    }
-
-    .product-content{
-      padding:22px;
-    }
-
-    .product-content h3{
-      font-size:19px;
-      margin-bottom:7px;
-    }
-
-    .product-content p{
-      font-size:13px;
-      color:#777;
-      margin-bottom:15px;
-    }
-
-    .enquiry{
-      display:inline-block;
-      background:#8b4a28;
-      color:white;
-      padding:9px 17px;
-      border-radius:20px;
-      font-size:13px;
-      font-weight:600;
-    }
-
-    /* WHY US */
-
-    .why-grid{
-      max-width:1100px;
-      margin:auto;
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:25px;
-    }
-
-    .why{
-      text-align:center;
-      padding:30px 20px;
-    }
-
-    .why-icon{
-      font-size:40px;
-      margin-bottom:15px;
-    }
-
-    .why h3{
-      margin-bottom:8px;
-    }
-
-    .why p{
+    .card p{
       color:#777;
       font-size:14px;
     }
 
-    /* GALLERY */
+    .products{
+      grid-template-columns:repeat(3,1fr);
+    }
+
+    .product{
+      overflow:hidden;
+      padding:0;
+      text-align:left;
+    }
+
+    .product img{
+      width:100%;
+      height:210px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:20px;
+    }
+
+    .product-content h3{
+      margin-bottom:7px;
+    }
+
+    .why{
+      background:#fff;
+    }
+
+    .why-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+    }
+
+    .why-box{
+      padding:30px;
+      background:#fff8f2;
+      border-radius:18px;
+      border-left:4px solid #d96521;
+    }
+
+    .why-box h3{
+      margin-bottom:8px;
+      color:#7c3213;
+    }
 
     .gallery{
-      max-width:1200px;
-      margin:auto;
+      background:#f8eee5;
+    }
+
+    .gallery-grid{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(3,1fr);
       gap:15px;
     }
 
-    .gallery img{
-      height:240px;
+    .gallery-grid img{
+      width:100%;
+      height:230px;
       object-fit:cover;
       border-radius:15px;
       transition:.3s;
     }
 
-    .gallery img:hover{
+    .gallery-grid img:hover{
       transform:scale(1.03);
     }
 
-    /* CTA */
-
     .cta{
-      margin:0 7% 80px;
-      border-radius:30px;
-      padding:65px 30px;
+      background:
+        linear-gradient(rgba(100,42,15,.85),rgba(100,42,15,.85)),
+        url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;
+      background-position:center;
       text-align:center;
       color:white;
-      background:
-      linear-gradient(rgba(82,39,20,.88),rgba(82,39,20,.88)),
-      url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80")
-      center/cover;
     }
 
     .cta h2{
-      font-family:'Playfair Display',serif;
-      font-size:42px;
+      font-size:38px;
       margin-bottom:12px;
     }
 
     .cta p{
-      color:#eee;
       margin-bottom:25px;
     }
 
-    /* CONTACT */
-
     .contact{
-      max-width:1200px;
-      margin:auto;
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:40px;
+      gap:35px;
     }
 
-    .contact-info{
-      background:#f7eee8;
-      padding:35px;
-      border-radius:25px;
-    }
-
-    .contact-info h2{
-      font-family:'Playfair Display',serif;
-      font-size:35px;
-      margin-bottom:20px;
+    .contact-box{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 5px 20px rgba(0,0,0,.07);
     }
 
     .contact-item{
-      display:flex;
-      gap:15px;
-      margin:20px 0;
-      align-items:flex-start;
+      margin-bottom:22px;
     }
 
-    .contact-item .ci{
-      font-size:23px;
+    .contact-item h3{
+      color:#8b3a16;
+      margin-bottom:4px;
     }
 
-    .contact-item h4{
-      font-size:14px;
-      margin-bottom:2px;
-    }
-
-    .contact-item p{
-      font-size:13px;
-      color:#666;
-    }
-
-    .contact-form{
-      background:white;
-      padding:35px;
-      border-radius:25px;
-      box-shadow:0 8px 30px rgba(0,0,0,.07);
-    }
-
-    .contact-form h3{
-      font-size:25px;
-      margin-bottom:20px;
-    }
-
-    input,textarea,select{
+    form input,
+    form textarea{
       width:100%;
-      padding:13px 15px;
-      margin-bottom:15px;
+      padding:13px;
+      margin-bottom:14px;
       border:1px solid #ddd;
       border-radius:10px;
-      outline:none;
       font-family:inherit;
-      background:#fff;
+      outline:none;
     }
 
-    textarea{
-      height:120px;
+    form textarea{
+      height:130px;
       resize:none;
     }
 
-    input:focus,textarea:focus,select:focus{
-      border-color:#b56535;
-    }
-
-    .submit-btn{
-      width:100%;
+    form button{
       border:none;
       cursor:pointer;
-      background:#8b4a28;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-size:15px;
-      font-weight:600;
+      font-family:inherit;
+      width:100%;
     }
-
-    /* FOOTER */
 
     footer{
-      background:#241914;
+      background:#28170e;
       color:white;
-      padding:45px 7% 20px;
-    }
-
-    .footer-grid{
-      max-width:1200px;
-      margin:auto;
-      display:grid;
-      grid-template-columns:2fr 1fr 1fr;
-      gap:40px;
-    }
-
-    footer h2{
-      font-family:'Playfair Display',serif;
-      margin-bottom:10px;
+      text-align:center;
+      padding:25px 15px;
     }
 
     footer p{
-      color:#bbb;
-      font-size:13px;
+      font-size:14px;
+      color:#ddd;
     }
-
-    footer h4{
-      margin-bottom:12px;
-    }
-
-    footer a{
-      display:block;
-      color:#bbb;
-      font-size:13px;
-      margin:7px 0;
-    }
-
-    footer a:hover{
-      color:white;
-    }
-
-    .copyright{
-      text-align:center;
-      border-top:1px solid #493b34;
-      margin-top:30px;
-      padding-top:18px;
-      color:#999;
-      font-size:12px;
-    }
-
-    /* WHATSAPP */
 
     .whatsapp{
       position:fixed;
@@ -580,53 +384,31 @@
       bottom:20px;
       width:58px;
       height:58px;
-      background:#25D366;
-      color:white;
       border-radius:50%;
+      background:#25d366;
+      color:white;
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:28px;
-      box-shadow:0 5px 20px rgba(0,0,0,.2);
+      font-size:27px;
       z-index:999;
+      box-shadow:0 5px 18px rgba(0,0,0,.25);
     }
 
-    /* MOBILE */
-
     @media(max-width:900px){
-
       .nav-links{
-        position:absolute;
-        top:70px;
-        right:20px;
-        width:220px;
-        background:white;
-        padding:20px;
-        border-radius:15px;
-        box-shadow:0 10px 30px rgba(0,0,0,.15);
         display:none;
-        flex-direction:column;
-        align-items:stretch;
-        gap:15px;
       }
 
-      .nav-links.active{
-        display:flex;
+      .hero h1{
+        font-size:40px;
       }
 
-      .menu{
-        display:block;
-      }
-
-      .category-grid{
+      .grid{
         grid-template-columns:repeat(2,1fr);
       }
 
-      .product-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
-
-      .gallery{
+      .products{
         grid-template-columns:repeat(2,1fr);
       }
 
@@ -638,447 +420,443 @@
       .why-grid{
         grid-template-columns:1fr;
       }
+
+      .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
     }
 
     @media(max-width:600px){
-
-      section{
-        padding:65px 5%;
-      }
-
       .hero{
-        padding:120px 6% 60px;
+        padding-top:120px;
       }
 
       .hero h1{
-        font-size:43px;
-      }
-
-      .hero p{
-        font-size:14px;
-      }
-
-      .section-title h2,
-      .about-text h2{
-        font-size:34px;
-      }
-
-      .category-grid,
-      .product-grid,
-      .gallery{
-        grid-template-columns:1fr;
-      }
-
-      .about-img img{
-        height:330px;
-      }
-
-      .gallery img{
-        height:250px;
-      }
-
-      .cta{
-        margin:0 5% 60px;
-        padding:45px 20px;
-      }
-
-      .cta h2{
         font-size:32px;
       }
 
-      .footer-grid{
-        grid-template-columns:1fr;
-        gap:25px;
+      .hero p{
+        font-size:16px;
       }
 
-    }
+      section{
+        padding:60px 15px;
+      }
 
+      .grid,
+      .products,
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .section-title h2{
+        font-size:28px;
+      }
+
+      .about img{
+        height:280px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
 
-<header>
-  <nav>
-
-    <a href="#home" class="logo">
-      Kulswamini
-      <span>Machine Centre</span>
-    </a>
-
-    <div class="menu" onclick="toggleMenu()">☰</div>
-
-    <div class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#categories">Categories</a>
-      <a href="#products">Products</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact" class="nav-btn">Contact</a>
+    <div class="logo">
+      🧵 कुलस्वामिनी मशीन सेंटर
+      <span>जेंट्स व लेडीज टेलरिंग साहित्य</span>
     </div>
 
-  </nav>
-</header>
+    <ul class="nav-links">
+      <li><a href="#home">मुख्यपृष्ठ</a></li>
+      <li><a href="#about">आमच्याबद्दल</a></li>
+      <li><a href="#categories">साहित्य</a></li>
+      <li><a href="#products">उत्पादने</a></li>
+      <li><a href="#gallery">गॅलरी</a></li>
+      <li><a href="#contact">संपर्क</a></li>
+    </ul>
+
+  </div>
+</nav>
 
 
 <!-- HERO -->
-
 <section class="hero" id="home">
-
   <div class="hero-content">
 
-    <div class="tag">
-      ✨ Gents & Ladies Tailoring Material
-    </div>
-
     <h1>
-      Everything You Need<br>
-      For <span>Perfect Tailoring</span>
+      शिवणकामासाठी लागणारे
+      सर्व साहित्य एकाच ठिकाणी
     </h1>
 
     <p>
-      Quality tailoring material for gents and ladies —
-      threads, buttons, zips, needles, machine accessories,
-      measuring tools and much more.
+      कुलस्वामिनी मशीन सेंटरमध्ये जेंट्स आणि लेडीज
+      टेलरिंगसाठी आवश्यक विविध प्रकारचे साहित्य उपलब्ध.
     </p>
 
     <div class="buttons">
-
       <a href="#products" class="btn btn-primary">
-        Explore Products
+        🛍️ साहित्य पहा
       </a>
 
       <a href="#contact" class="btn btn-light">
-        Enquire Now
+        📞 आमच्याशी संपर्क करा
       </a>
-
     </div>
 
   </div>
-
 </section>
 
 
 <!-- ABOUT -->
-
 <section id="about">
+  <div class="container">
 
-  <div class="about">
-
-    <div class="about-img">
-      <img
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80"
-        alt="Tailoring Material">
+    <div class="section-title">
+      <h2>आमच्याबद्दल</h2>
+      <p>कुलस्वामिनी मशीन सेंटर</p>
     </div>
 
-    <div class="about-text">
+    <div class="about">
 
-      <small>ABOUT US</small>
+      <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=1000&q=80">
 
-      <h2>
-        Kulswamini Machine Centre
-      </h2>
+      <div class="about-text">
 
-      <p>
-        Welcome to Kulswamini Machine Centre —
-        your destination for gents and ladies tailoring material.
-      </p>
+        <h3>आपल्या टेलरिंग व्यवसायासाठी योग्य साहित्य</h3>
 
-      <p>
-        We provide a wide range of tailoring essentials
-        useful for tailors, boutiques, fashion designers
-        and home sewing work.
-      </p>
+        <p>
+          कुलस्वामिनी मशीन सेंटरमध्ये जेंट्स व लेडीज
+          टेलरिंगसाठी लागणारे विविध प्रकारचे साहित्य
+          उपलब्ध करून दिले जाते.
+        </p>
 
-      <p>
-        From everyday tailoring accessories to sewing machine
-        essentials, you can enquire with us for the products
-        you need.
-      </p>
+        <p>
+          दोरे, सुया, बटणे, झिप, हुक, लेस, पायपिंग,
+          कटिंग व मोजमाप साहित्य तसेच शिवण मशीनचे
+          विविध साहित्य येथे मिळते.
+        </p>
 
-      <a href="#contact" class="btn btn-primary">
-        Contact Us
-      </a>
+        <p>
+          आपल्या गरजेनुसार योग्य साहित्य निवडण्यासाठी
+          आमच्याशी संपर्क करा.
+        </p>
+
+      </div>
 
     </div>
 
   </div>
-
 </section>
 
 
 <!-- CATEGORIES -->
+<section class="categories" id="categories">
 
-<section id="categories">
+  <div class="container">
 
-  <div class="section-title">
-
-    <small>OUR CATEGORIES</small>
-
-    <h2>
-      Tailoring Essentials
-    </h2>
-
-    <p>
-      Explore our main categories of tailoring materials.
-    </p>
-
-  </div>
-
-
-  <div class="category-grid">
-
-    <div class="category">
-      <div class="icon">👔</div>
-      <h3>Gents Material</h3>
-      <p>
-        Shirt, pant & suit tailoring accessories.
-      </p>
+    <div class="section-title">
+      <h2>आमच्याकडे उपलब्ध साहित्य</h2>
+      <p>टेलरिंगसाठी आवश्यक विविध प्रकारचे साहित्य</p>
     </div>
 
+    <div class="grid">
 
-    <div class="category">
-      <div class="icon">👗</div>
-      <h3>Ladies Material</h3>
-      <p>
-        Blouse, dress & ladies tailoring accessories.
-      </p>
-    </div>
+      <div class="card">
+        <div class="icon">👔</div>
+        <h3>जेंट्स टेलरिंग साहित्य</h3>
+        <p>शर्ट, पँट व इतर कपड्यांसाठी आवश्यक साहित्य.</p>
+      </div>
 
+      <div class="card">
+        <div class="icon">👗</div>
+        <h3>लेडीज टेलरिंग साहित्य</h3>
+        <p>ड्रेस, ब्लाऊज व इतर कपड्यांसाठी साहित्य.</p>
+      </div>
 
-    <div class="category">
-      <div class="icon">🧵</div>
-      <h3>Threads & Needles</h3>
-      <p>
-        Different tailoring threads and needles.
-      </p>
-    </div>
+      <div class="card">
+        <div class="icon">🧵</div>
+        <h3>दोरे व सुया</h3>
+        <p>विविध प्रकारचे दोरे आणि शिवणकामाच्या सुया.</p>
+      </div>
 
+      <div class="card">
+        <div class="icon">📏</div>
+        <h3>कटिंग व मोजमाप</h3>
+        <p>मोजपट्टी, स्केल आणि कटिंगसाठी लागणारे साहित्य.</p>
+      </div>
 
-    <div class="category">
-      <div class="icon">✂️</div>
-      <h3>Cutting Tools</h3>
-      <p>
-        Scissors, measuring tapes, chalk and tools.
-      </p>
-    </div>
+      <div class="card">
+        <div class="icon">🔘</div>
+        <h3>बटणे</h3>
+        <p>विविध आकार व डिझाईनची बटणे.</p>
+      </div>
 
+      <div class="card">
+        <div class="icon">🤐</div>
+        <h3>झिप व हुक</h3>
+        <p>कपड्यांसाठी विविध प्रकारच्या झिप व हुक.</p>
+      </div>
 
-    <div class="category">
-      <div class="icon">🔘</div>
-      <h3>Buttons</h3>
-      <p>
-        Different buttons for tailoring work.
-      </p>
-    </div>
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>शिवण मशीन साहित्य</h3>
+        <p>शिवण मशीनसाठी आवश्यक विविध साहित्य.</p>
+      </div>
 
+      <div class="card">
+        <div class="icon">🎀</div>
+        <h3>लेस व पायपिंग</h3>
+        <p>ड्रेस व ब्लाऊजसाठी विविध लेस व पायपिंग.</p>
+      </div>
 
-    <div class="category">
-      <div class="icon">〰️</div>
-      <h3>Zips & Hooks</h3>
-      <p>
-        Zippers, hooks and other accessories.
-      </p>
-    </div>
-
-
-    <div class="category">
-      <div class="icon">⚙️</div>
-      <h3>Machine Accessories</h3>
-      <p>
-        Sewing machine related accessories.
-      </p>
-    </div>
-
-
-    <div class="category">
-      <div class="icon">🎀</div>
-      <h3>Laces & Piping</h3>
-      <p>
-        Decorative tailoring materials.
-      </p>
     </div>
 
   </div>
-
 </section>
 
 
 <!-- PRODUCTS -->
+<section id="products">
 
-<section class="products" id="products">
+  <div class="container">
 
-  <div class="section-title">
+    <div class="section-title">
+      <h2>लोकप्रिय साहित्य</h2>
+      <p>आमच्याकडे मिळणाऱ्या काही वस्तू</p>
+    </div>
 
-    <small>FEATURED MATERIAL</small>
+    <div class="grid products">
 
-    <h2>
-      Popular Products
-    </h2>
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1598733088498-0d3c2a7a0b5f?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>🧵 टेलरिंग दोरे</h3>
+          <p>विविध रंग व प्रकारातील शिवणकामाचे दोरे.</p>
+        </div>
+      </div>
+
+
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>🔘 बटणे</h3>
+          <p>जेंट्स व लेडीज कपड्यांसाठी विविध बटणे.</p>
+        </div>
+      </div>
+
+
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>🤐 झिप व हुक</h3>
+          <p>विविध आकाराच्या झिप व हुक उपलब्ध.</p>
+        </div>
+      </div>
+
+
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1583845112203-454c8b6d7c7c?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>📏 मोजमाप साहित्य</h3>
+          <p>टेलरिंगसाठी आवश्यक मोजपट्टी व इतर साहित्य.</p>
+        </div>
+      </div>
+
+
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>⚙️ मशीन साहित्य</h3>
+          <p>शिवण मशीनसाठी आवश्यक साहित्य व अॅक्सेसरीज.</p>
+        </div>
+      </div>
+
+
+      <div class="card product">
+        <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=80">
+
+        <div class="product-content">
+          <h3>🎀 लेडीज टेलरिंग साहित्य</h3>
+          <p>ब्लाऊज व ड्रेससाठी विविध प्रकारचे साहित्य.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>आम्हाला का निवडावे?</h2>
+      <p>ग्राहकांसाठी आमचे प्रयत्न</p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-box">
+        <h3>⭐ विविध प्रकारचे साहित्य</h3>
+        <p>
+          जेंट्स आणि लेडीज टेलरिंगसाठी
+          विविध प्रकारचे साहित्य एकाच ठिकाणी.
+        </p>
+      </div>
+
+      <div class="why-box">
+        <h3>💯 चांगली गुणवत्ता</h3>
+        <p>
+          आपल्या शिवणकामासाठी उपयोगी आणि
+          दर्जेदार साहित्य मिळवण्याचा प्रयत्न.
+        </p>
+      </div>
+
+      <div class="why-box">
+        <h3>🤝 ग्राहक सेवा</h3>
+        <p>
+          आपल्या गरजेनुसार साहित्य निवडण्यासाठी
+          योग्य मार्गदर्शन.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>उत्पादनांची गॅलरी</h2>
+      <p>आमच्या दुकानातील साहित्याची झलक</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80">
+
+      <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80">
+
+      <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=900&q=80">
+
+      <img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=900&q=80">
+
+      <img src="https://images.unsplash.com/photo-1583845112203-454c8b6d7c7c?auto=format&fit=crop&w=900&q=80">
+
+      <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=80">
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+  <div class="container">
+
+    <h2>टेलरिंग साहित्य हवे आहे?</h2>
 
     <p>
-      Product availability and pricing can be confirmed
-      through WhatsApp enquiry.
+      आजच आमच्याशी संपर्क करा आणि आपल्या गरजेचे साहित्य विचारा.
     </p>
+
+    <a
+      href="https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20टेलरिंग%20साहित्याबद्दल%20माहिती%20हवी%20आहे."
+      class="btn btn-primary">
+      💬 WhatsApp वर चौकशी करा
+    </a>
 
   </div>
 
+</section>
 
-  <div class="product-grid">
 
+<!-- CONTACT -->
+<section id="contact">
 
-    <div class="product">
+  <div class="container">
 
-      <img
-        src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=80"
-        alt="Tailoring Threads">
+    <div class="section-title">
+      <h2>आमच्याशी संपर्क साधा</h2>
+      <p>साहित्याबद्दल चौकशी करण्यासाठी संपर्क करा</p>
+    </div>
 
-      <div class="product-content">
+    <div class="contact">
 
-        <h3>Tailoring Threads</h3>
+      <div class="contact-box">
 
-        <p>
-          Quality threads for different tailoring requirements.
-        </p>
+        <div class="contact-item">
+          <h3>📍 दुकानाचा पत्ता</h3>
+          <p>आपला दुकानाचा पूर्ण पत्ता येथे टाका</p>
+        </div>
 
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Tailoring%20Threads."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
+        <div class="contact-item">
+          <h3>📞 मोबाईल नंबर</h3>
+          <p>+91 XXXXXXXXXX</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>💬 WhatsApp</h3>
+          <p>टेलरिंग साहित्याबद्दल WhatsApp वर चौकशी करा.</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>🕐 दुकानाची वेळ</h3>
+          <p>सोमवार ते रविवार — सकाळी 9 ते रात्री 9</p>
+        </div>
 
       </div>
 
-    </div>
 
+      <div class="contact-box">
 
-    <div class="product">
+        <h3 style="margin-bottom:18px;color:#8b3a16;">
+          WhatsApp वर चौकशी करा
+        </h3>
 
-      <img
-        src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=900&q=80"
-        alt="Buttons">
+        <form onsubmit="sendWhatsApp(); return false;">
 
-      <div class="product-content">
+          <input
+            type="text"
+            id="name"
+            placeholder="आपले नाव"
+            required>
 
-        <h3>Buttons Collection</h3>
+          <input
+            type="text"
+            id="product"
+            placeholder="आपल्याला कोणते साहित्य हवे आहे?"
+            required>
 
-        <p>
-          Buttons suitable for gents and ladies garments.
-        </p>
+          <textarea
+            id="message"
+            placeholder="आपला संदेश"></textarea>
 
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Buttons."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
+          <button class="btn btn-primary">
+            WhatsApp वर संदेश पाठवा
+          </button>
 
-      </div>
-
-    </div>
-
-
-    <div class="product">
-
-      <img
-        src="https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=900&q=80"
-        alt="Sewing Accessories">
-
-      <div class="product-content">
-
-        <h3>Sewing Accessories</h3>
-
-        <p>
-          Useful accessories for sewing and tailoring work.
-        </p>
-
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Sewing%20Accessories."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="product">
-
-      <img
-        src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=900&q=80"
-        alt="Zippers">
-
-      <div class="product-content">
-
-        <h3>Zippers & Hooks</h3>
-
-        <p>
-          Zippers, hooks and other garment accessories.
-        </p>
-
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Zippers%20and%20Hooks."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="product">
-
-      <img
-        src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=80"
-        alt="Measuring Tools">
-
-      <div class="product-content">
-
-        <h3>Measuring Tools</h3>
-
-        <p>
-          Measuring tapes, scales and tailoring tools.
-        </p>
-
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Measuring%20Tools."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="product">
-
-      <img
-        src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=900&q=80"
-        alt="Ladies Tailoring Material">
-
-      <div class="product-content">
-
-        <h3>Ladies Tailoring Material</h3>
-
-        <p>
-          Blouse and ladies garment accessories.
-        </p>
-
-        <a
-          class="enquiry"
-          href="https://wa.me/91XXXXXXXXXX?text=Hello%20Kulswamini%20Machine%20Centre,%20I%20want%20to%20enquire%20about%20Ladies%20Tailoring%20Material."
-          target="_blank">
-          Enquire on WhatsApp
-        </a>
+        </form>
 
       </div>
 
@@ -1089,13 +867,52 @@
 </section>
 
 
-<!-- WHY US -->
+<!-- FOOTER -->
+<footer>
 
-<section>
+  <p>
+    © 2026 कुलस्वामिनी मशीन सेंटर. सर्व हक्क राखीव.
+  </p>
 
-  <div class="section-title">
+  <p>
+    जेंट्स व लेडीज टेलरिंग साहित्य
+  </p>
 
-    <small>WHY CHOOSE US</small>
+</footer>
 
-    <h2>
-  
+
+<!-- FLOATING WHATSAPP -->
+<a
+  class="whatsapp"
+  href="https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20टेलरिंग%20साहित्याबद्दल%20माहिती%20हवी%20आहे."
+  target="_blank">
+  💬
+</a>
+
+
+<script>
+
+function sendWhatsApp(){
+
+  let name = document.getElementById("name").value;
+  let product = document.getElementById("product").value;
+  let message = document.getElementById("message").value;
+
+  let text =
+  "नमस्कार कुलस्वामिनी मशीन सेंटर,%0A%0A" +
+  "नाव: " + name + "%0A" +
+  "साहित्य: " + product + "%0A" +
+  "संदेश: " + message;
+
+  let phone = "91XXXXXXXXXX";
+
+  window.open(
+    "https://wa.me/" + phone + "?text=" + text,
+    "_blank"
+  );
+}
+
+</script>
+
+</body>
+</html>
